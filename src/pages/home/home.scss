@@ -1,0 +1,38 @@
+.home {
+  .heading {
+    color: var(--black);
+    margin: 2rem 2rem;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid var(--red-color);
+  }
+  .view{
+    background-color:var(--red-color);
+    
+    color: #fff;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    align-self: end;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    position: relative;
+    left: 80%;
+    margin-top: 0.6rem;
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    
+    &.displayNone {
+      display: none;
+    }
+  }
+}

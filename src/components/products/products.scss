@@ -1,0 +1,27 @@
+.products {
+  width: 93%;
+
+  display: grid;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.view{
+  background-color:var(--red-color);
+  
+  color: #fff;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  align-self: end;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  position: relative;
+  left: 80%;
+  margin-top: 0.6rem;
+}

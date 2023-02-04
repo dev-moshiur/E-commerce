@@ -1,0 +1,125 @@
+.curt {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  .productsHeading {
+    height: 30px;
+    background: var(--light-color);
+    font-size: 1rem;
+    align-items: start;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    color: #eee;
+    padding: 0px 4%;
+    display: flex;
+
+    justify-content: space-between;
+    & > * {
+      font-size: 1.4rem;
+      color: white;
+      padding: 0.5rem;
+    }
+  }
+
+  .content {
+    width: 93%;
+    margin: 3rem auto;
+    display: flex;
+    column-gap: 4rem;
+    color: var(--black);
+    flex-wrap: wrap;
+    .productsContainer {
+      flex: 4 1 52rem;
+
+      display: flex;
+      height: fit-content;
+      flex-direction: column;
+      .productsHeading {
+        height: 25px;
+        background: #232f3f;
+        font-size: 1rem;
+        align-items: start;
+
+        color: #eee;
+        padding: 0px 4%;
+        display: flex;
+
+        justify-content: space-between;
+        & > * {
+          font-size: 1.4rem;
+          color: white;
+          padding: 0.5rem;
+        }
+      }
+      .products {
+        display: flex;
+
+        flex-direction: column;
+
+        margin: 0 auto;
+      }
+    }
+    .summery {
+      flex: 1 1 15rem;
+      display: flex;
+      margin-top: 1rem;
+      position: sticky;
+      top: 155px;
+
+      flex-direction: column;
+      padding: 0.8rem;
+      border: var(--border);
+      height: fit-content;
+
+      align-items: center;
+
+      .heading {
+        color: var(--green);
+        font-size: 1.6rem;
+      }
+
+      & > * {
+        display: flex;
+        margin: 0.2rem 0rem;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        width: calc(100% - 1.7rem);
+        font-weight: 500;
+      }
+      .orderNow {
+        background: var(--red-color);
+        width: fit-content;
+        margin-top: 0.2rem;
+        padding: 0.8rem;
+        color: #fff;
+        border-radius: 0.5rem;
+        border: var(--border);
+        font-size: 1.4rem;
+        font-weight: 500;
+        animation: grow 1s ease-in-out 0.3s infinite;
+        cursor: pointer;
+      }
+      @keyframes grow {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1) translateY(0.3rem);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 660px) {
+    .content {
+      flex-direction: column;
+    }
+  }
+}

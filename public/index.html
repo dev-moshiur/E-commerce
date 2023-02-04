@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>International Fashon house</title>
+    <style>
+      :root {
+        
+        /* --red-color:#ea1838; */
+        --red-color:orangered;
+        --bg-color:#f2f2fc;
+        --top-color:#554ac6;
+        --light-color:#7e81f4;
+        --green: #3bb67d;
+        --yellow: #ff9500;
+        --black: #444;
+        
+        /* --bg-color: #e6e6e6; */
+        --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+        --box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1),
+          -0.4rem -0.4rem 1rem #fff;
+        --box-shadow-inset: 0.4rem 0.4rem 1rem #ccc inset,
+          -0.4rem -0.4rem 1rem #fff inset;
+      }
+      ::-webkit-scrollbar-thumb {
+        background:var(--light-color);
+        border-radius: 0.6rem;
+      }
+      ::-webkit-scrollbar {
+        background: var(--bg-color);
+        width: 1rem;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body.active {
+        --green: #f9ca24;
+        --black: #fff;
+        --light-color: #ddd;
+        --bg-color: #222;
+        --border: 0.1rem solid rgba(0, 0, 0, 0.4);
+        --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+        --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
+          -0.4rem -0.4rem 1rem #333 inset;
+      }
+
+      *::selection {
+        background: var(--yellow);
+        color: #333;
+      }
+      html {
+        font-size: 62.5%;
+        background: #f7f7f7;
+      }
+      @media (max-width: 768px) {
+        html {
+          font-size: 60%;
+          background: #f7f7f7;
+        }
+      }
+      @media (max-width: 330px) {
+        html {
+          font-size: 42%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

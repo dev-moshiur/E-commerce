@@ -1,0 +1,124 @@
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--border);
+  border-radius: 0.8rem;
+  width: 100%;
+  margin: 2rem 0rem;
+  color: var(--black);
+
+  display: flex;
+  position: relative;
+
+  padding: 0.8rem;
+  .drop {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    transform: scale(1.5);
+    cursor: pointer;
+    Link {
+      text-decoration: none;
+    }
+    & > * {
+      color: crimson;
+    }
+  }
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    flex: 1 1 16rem;
+
+    .img {
+      grid-area: img;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 60%;
+        margin-top: 0.9rem;
+      }
+    }
+    .productName {
+      font-size: 1.4rem;
+      margin-top: 0.6rem;
+      font-weight: 600;
+      color: var(--black);
+    }
+  }
+
+  .middle {
+    flex: 1 1 8rem;
+
+    label {
+      margin-bottom: 0.3rem;
+      color: var(--black);
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    select {
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+
+      border: none;
+      outline: none;
+    }
+  }
+
+  .right {
+    flex: 1 1 8rem;
+
+    .quantityAndPrice {
+      font-weight: 500;
+      font-size: 1.3rem;
+      border-bottom: var(--border);
+      margin-bottom: 1.3rem;
+    }
+    .increase {
+      background: var(--red-color);
+      color: #fff;
+      font-size: 2rem;
+      width: 4rem;
+      height: 2.5rem;
+      border-radius: 0.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .priceNumber {
+      font-size: 2rem;
+      margin: 0.6rem 0rem;
+    }
+    .decrease {
+      background: var(--red-color);
+      color: #fff;
+      width: 4rem;
+      height: 2.5rem;
+      border-radius: 0.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .price {
+      border-top: var(--border);
+      font-size: 1.4rem;
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 0.6rem;
+    }
+  }
+}

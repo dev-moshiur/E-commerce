@@ -1,0 +1,103 @@
+.signIn {
+  background: var(--light-color);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 120px;
+  max-width: 500px;
+  border-radius: 0.5rem;
+
+  height: fit-content;
+  padding: 2.2rem;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  .heading {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-top: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      opacity: 0.8;
+    }
+    input {
+      outline: none;
+      padding: 0.4rem 0.5rem;
+      font-size: 1.3rem;
+    }
+    .submit {
+      background: var(--green);
+      border: none;
+      outline: none;
+
+      font-size: 1.3rem;
+      font-weight: 800;
+
+      margin-top: 1.1rem;
+      color: white;
+    }
+  }
+  .or {
+    display: flex;
+
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.43rem;
+    font-weight: 200;
+    text-align: center;
+    span {
+      border: var(--border);
+      padding: 0.2rem;
+    }
+    &::before {
+      content: "";
+      width: 48%;
+      height: 2px;
+      background-color: #444;
+    }
+    &::after {
+      content: "";
+      width: 48%;
+      height: 2px;
+      background-color: #444;
+    }
+  }
+  .googleAndFacebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+    & > * {
+      color: var(--green);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(1.6);
+      margin: 0rem 1.2rem;
+      border: var(--border);
+      padding: 0.3rem;
+      border-radius: 50%;
+    }
+  }
+  .signLog {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 0.4rem;
+
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
