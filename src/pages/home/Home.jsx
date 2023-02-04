@@ -2,7 +2,7 @@ import React from "react";
 import Products from "../../components/products/Products";
 
 // import CatagorySlider from "../../components/catagorySlider/CatagorySlider";
-import Reviews from '../../components/singleReview/SingleReview'
+import Reviews from '../../components/reviews/Reviews'
 import TodaysDeals from "../../components/todaysDeals/TodaysDeals";
 import "./home.scss";
 import Banner from "../../components/banner/Banner";

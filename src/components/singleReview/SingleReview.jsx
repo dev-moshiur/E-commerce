@@ -1,6 +1,6 @@
 import React from "react";
 import "./singleReview.scss";
-import photo from "../../images/f-1-1.png";
+import photo from "./rr.jpg";
 
 import { Star } from "@material-ui/icons";
 export default function SingleReview() {
