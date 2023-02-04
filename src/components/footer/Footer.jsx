@@ -20,14 +20,14 @@ const Footer = () => {
           <li className="fListItem">Hostels</li>
           <li className="fListItem">Guest houses</li>
         </ul>
-        <ul className="fList">
+        <ul className="fList dn">
           <li className="fListItem">Unique Pants to wear </li>
           <li className="fListItem">Reviews</li>
           <li className="fListItem">Unpacked: Fashion articles </li>
           <li className="fListItem">Travel communities </li>
           <li className="fListItem">Seasonal and holiday deals </li>
         </ul>
-        <ul className="fList">
+        <ul className="fList dn">
           <li className="fListItem"> rental </li>
           <li className="fListItem">Product Finder</li>
           <li className="fListItem">Product reservations </li>
@@ -38,8 +38,6 @@ const Footer = () => {
           <li className="fListItem">Partner Help</li>
           <li className="fListItem">Careers</li>
           <li className="fListItem">Sustainability</li>
-          <li className="fListItem">Press center</li>
-          <li className="fListItem">Safety Resource Center</li>
           <li className="fListItem">Investor relations</li>
           <li className="fListItem">Terms & conditions</li>
         </ul>

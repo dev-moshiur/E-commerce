@@ -26,3 +26,11 @@
     
     cursor: pointer;
   }
+
+  @media (max-width:600px) {
+    .dn{
+      display: none;
+    }
+
+    
+  }

@@ -137,11 +137,11 @@
                     justify-content: center;
                     background:var(--light-color);
                     padding: 0rem 1rem;
-                    column-gap: 2.4rem;
+                    column-gap: 0.4rem;
                     color: #fff;
                     
                     .icons{
-                        font-size: 1.6rem;
+                        font-size: 1.9rem;
                         cursor: pointer;
 
                     }
@@ -161,7 +161,7 @@
                     height: 0px;
                     display: flex;
                     flex-direction: column;
-                    width: 16.75rem;
+                    width: 13rem;
                     color: #fff;
                     overflow: hidden;
                     z-index: 10;

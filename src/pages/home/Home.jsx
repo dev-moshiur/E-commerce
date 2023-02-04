@@ -10,8 +10,8 @@ import { collection } from "../../data";
 import { Link } from "react-router-dom";
 export default function Home() {
   
-  const fewProducts=collection.slice(0,11);
-  const topDiscountProducts=collection.filter((elm)=>elm.discount>65)
+  const fewProducts=collection.slice(0,8);
+  const topDiscountProducts=collection.filter((elm)=>elm.discount>88)
   const shoesProducts=collection.filter((elm)=>elm.catagory==='shoe').slice(0,7)
   const jacketsProducts=collection.filter((elm)=>elm.catagory==='jacket').slice(0,5)
   const watchsProducts=collection.filter((elm)=>elm.catagory==='watch').slice(0,7)

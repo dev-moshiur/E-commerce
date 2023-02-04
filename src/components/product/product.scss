@@ -7,10 +7,10 @@
   margin: 0.6rem 0.4rem;
   position: relative;
   overflow: hidden;
-  max-width: 26rem;
+  max-width: 20rem;
 
   &:hover img {
-    transform: translateY(0.5rem) scale(0.9.5);
+    transform: translateY(0.5rem) scale(0.9);
   }
   .loveFlow {
     display: flex;
@@ -95,7 +95,7 @@
         width: fit-content;
         padding: 0.3rem 0.5rem;
         text-align: center;
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
         font-size: 1rem;
         font-weight: 700;
 
@@ -116,6 +116,7 @@
     .curtOrShop {
       display: flex;
       justify-content: space-between;
+      margin-top: 0.5rem;
 
       & > * {
         &:nth-child(2) {
@@ -127,7 +128,7 @@
         width: fit-content;
         padding: 0.3rem 0.5rem;
         text-align: center;
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
         font-size: 1.2rem;
         font-weight: 700;
         display: flex;
