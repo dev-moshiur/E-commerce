@@ -320,7 +320,8 @@
                     position: absolute;
                     top: 140%;
                     left: 2%;
-                    width: 0%;
+                    right: 2%;
+                    
                     padding: 1rem;
                     border-radius: 0.3rem;
                     overflow: hidden;
@@ -349,7 +350,7 @@
                 &.show{
                     .toggle{
                         height: fit-content;
-                        width: 94%;
+                        
                         opacity: 1;
                         top: 99%;
                         display: flex;

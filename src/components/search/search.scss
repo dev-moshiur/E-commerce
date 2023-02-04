@@ -15,7 +15,7 @@
         outline: none;
         color: var(--black);
         font-size: 1.5rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.6rem 0.8rem;
 
 
     }
@@ -30,7 +30,7 @@
         background-color: #f2f3f4;
         color: var(--black);
         font-size: 1.5rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.6rem 0.8rem;
         
         outline: none;
 
@@ -41,9 +41,10 @@
         font-size: 1.6rem;
 
         height: 100%;
-        padding: 0.500rem 2rem;
+        padding: 0.600rem 2rem;
         cursor: pointer;
         width: fit-content;
        text-decoration: none;
+       border-radius: 0.2rem;
     }
 }
