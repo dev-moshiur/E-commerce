@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter } from "@material-ui/icons";
+import { Email, Facebook,Phone,Place, Instagram, Twitter } from "@material-ui/icons";
 import React from "react";
 import { useEffect } from "react";
 import "./contact.scss";
@@ -6,19 +6,52 @@ import "./contact.scss";
 export default function Contact() {
   return (
     <div className="contact">
-      <div className="address">
-        <div className="heading">Location</div>
-        <div className="text">Arif Bazar,Khanshama,Birganj,Dinajpur</div>
-        <div className="heading">Follow Us On</div>
-        <div className="icons">
-          <Facebook />
-          <Twitter />
-          <Instagram />
+      <div className="info">
+        <div className="heeading">
+          We are available
         </div>
-        
+        <div className="text">
+          Lorem ipsum, dolor sit amet consectetur 
+          adipisicing elit. Nobis odio eos veritatis
+           obcaecati quod. Sapiente exercitationem
+            perferendis dolore iure, doloremque
+             
+        </div>
+        <div className="links">
+          <div className="cell">
+            <div className="logo">
+              <Email/>
+
+            </div>
+            <div className="rows">
+              <span>dev.moshiurr@gmail.com</span>
+              <span>dev.moshiurr@gmail.com</span>
+            </div>
+          </div>
+          <div className="cell">
+            <div className="logo">
+              <Phone/>
+
+            </div>
+            <div className="rows">
+              <span>+880 1725256642</span>
+              <span>+880 1885355627</span>
+            </div>
+          </div>
+          <div className="cell">
+            <div className="logo">
+              <Place/>
+
+            </div>
+            <div className="rows">
+              <span>Chalkbanaroshi,</span>
+              <span>Birganj,Dinajpur</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="contactForm">
-        <div className="heading">Contact Form</div>
+        <div className="heading">Contact Us</div>
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <input
             type="text"
