@@ -89,7 +89,7 @@ export default function Topbar() {
                 </div>
                 <div className="toggle">
                     <div className="wrapper">
-                        <Clear className='clear' onClick={()=>setSearchOpen((pre)=>!pre)}/>
+                        <Clear className='clear' onClick={()=>setSearchOpen(false)}/>
                         <SearchComponent setSearchOpen={setSearchOpen}/>
                     </div>
                 
