@@ -101,6 +101,8 @@
           border-radius: 0.4rem;
           transition: 0.5s;
           cursor: pointer;
+	  border:none;
+	  outline:none;
 
           &:hover {
             background: crimson;
