@@ -84,7 +84,7 @@ export default function Topbar() {
                 <Link to='/contact'>Contact</Link>
             </div>
             <div className={searchOpen ? "search show":'search'}>
-                <div className="main" onClick={()=>{if(searchOpen){setSearchOpen((pre)=>!pre)}}}>
+                <div className="main" onClick={()=>setSearchOpen((pre)=>!pre)}>
                     <Search/>
                 </div>
                 <div className="toggle">
