@@ -34,12 +34,7 @@ export default function CurtProduct({ itemData }) {
       <span onClick={removeItem} className="drop">
         {cartItems.length == 1 ? (
           <Link
-            onClick={() =>
-              dispatch({
-                type: "changeActiveLink",
-                value: "home",
-              })
-            }
+            onClick={removeItem}
             to="/"
           >
             <CancelPresentation />
