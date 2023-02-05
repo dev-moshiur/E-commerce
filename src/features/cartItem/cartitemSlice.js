@@ -16,7 +16,7 @@ export const counterSlice = createSlice({
       },
     drop: (state,action) => {
           state.cartItems = state.cartItems.filter((item)=> item.id !== action.payload.id);
-          
+          state.totalPrice = state.totalPrice - action.payload.price;
    
        },
     
