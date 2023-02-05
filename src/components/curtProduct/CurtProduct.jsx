@@ -25,7 +25,7 @@ export default function CurtProduct({ itemData }) {
   };
   const removeItem = () => {
     dispatch(drop(itemData))
-    dispatch(decreaseTotalPrice(itemData.price * quantity))
+    dispatch(decreaseTotalPrice(itemData.price * (quantity - 1)))
 
   };
 
