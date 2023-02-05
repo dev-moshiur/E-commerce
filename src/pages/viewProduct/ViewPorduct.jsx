@@ -11,6 +11,13 @@ export default function ViewPorduct() {
   
   
   const dispatch = useDispatch();
+  const handleCart = () =>{
+    if (!cartItems.includes(item)) {
+      dispatch(insert(item))
+      
+    }
+    
+  }
   
   
   return (
@@ -48,7 +55,7 @@ export default function ViewPorduct() {
                 <span>Category : </span>
                 {item.catagory}
               </div>
-              <div onClick={()=>dispatch(insert(item))} className="addToCart">
+              <div onClick={handleCart} className="addToCart">
                 Add To Cart
               </div>
             </div>
