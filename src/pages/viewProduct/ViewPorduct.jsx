@@ -55,6 +55,7 @@ export default function ViewPorduct() {
                 <span>Category : </span>
                 {item.catagory}
               </div>
+              {cartItems.includes(item) && <div className="added">Already Added</div>}
               <div onClick={handleCart} className="addToCart">
                 Add To Cart
               </div>

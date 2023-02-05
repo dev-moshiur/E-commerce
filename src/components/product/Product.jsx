@@ -47,7 +47,7 @@ export default function Product({item}) {
         </div>
         <div className="curtOrShop">
           <span onClick={addToCart} className="addToCurt btn">
-            Add to Curt
+            Add to Cart
           </span>
           <Link to="/cart" onClick={addToCart} className="shopNow btn">
             Shop Now!
