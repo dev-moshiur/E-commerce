@@ -10,7 +10,7 @@ import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 import Search from './pages/search/Search'
 
-import View from "./pages/viewProduct/ViewPorduct";
+import View from "./components/viewProduct/ViewPorduct";
 
 
 import Footer from "./components/footer/Footer";

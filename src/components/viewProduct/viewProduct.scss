@@ -88,6 +88,7 @@
         .added{
           font-size: 1.6rem;
           font-weight: 500;
+          color: var(--green);
 
         }
         .addToCart {
@@ -100,6 +101,18 @@
           border-radius: 0.4rem;
           transition: 0.5s;
           cursor: pointer;
+          border: none;
+          outline: none;
+
+          &.added{
+            background-color: gray;
+            cursor:not-allowed;
+            &:hover{
+              background:gray;
+            word-spacing: 0;
+
+            }
+          }
 
           &:hover {
             background: crimson;

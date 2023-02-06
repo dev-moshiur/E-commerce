@@ -21,7 +21,7 @@ export default function Search({setSearchOpen}) {
             <option value="shoe">Shoes</option>
             <option value="watch">Watches</option>
         </select>
-        <Link onClick={()=>setSearchOpen((pre)=>!pre)} to={`/search?catagory=${searchCatagory}&query=${searchQuery}`} className='searchIcon'>
+        <Link onClick={()=>setSearchOpen(false)} to={`/search?catagory=${searchCatagory}&query=${searchQuery}`} className='searchIcon'>
 
 
         Search

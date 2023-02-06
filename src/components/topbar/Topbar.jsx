@@ -2,7 +2,7 @@
 
 import { ArrowDownward, KeyboardArrowDown,Clear, Menu, Person, Search, ShoppingCart } from '@material-ui/icons'
 import React ,{useState}from 'react'
-import { Link } from 'react-router-dom'
+import { Link ,useLocation } from 'react-router-dom'
 
 import "./topbar.scss";
 import { useSelector } from 'react-redux';
@@ -15,6 +15,10 @@ export default function Topbar() {
     const [searchCatagory, setSearchCatagory] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [searchOpen, setSearchOpen] = useState(false)
+    
+    const {pathname} = useLocation()
+    
+    
   return (
     <div className='topbar'>
         <div className="top">
@@ -78,10 +82,10 @@ export default function Topbar() {
 
             
             <div className="navbar">
-                <Link to='/'>Home</Link>
-                <Link to='/products'>Products</Link>
-                <Link to='/cart'>Cart</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link className={(pathname == '/') ? 'active' : ''} to='/'>Home</Link>
+                <Link className={(pathname == '/products') ? 'active' : ''} to='/products'>Products</Link>
+                <Link className={(pathname == '/cart') ? 'active' : ''} to='/cart'>Cart</Link>
+                <Link className={(pathname == '/contact') ? 'active' : ''} to='/contact'>Contact</Link>
             </div>
             <div className={searchOpen ? "search show":'search'}>
                 <div className="main" onClick={()=>{if(searchOpen){setSearchOpen((pre)=>!pre)}}}>
@@ -89,7 +93,7 @@ export default function Topbar() {
                 </div>
                 <div className="toggle">
                     <div className="wrapper">
-                        <Clear className='clear' onClick={()=>setSearchOpen((pre)=>!pre)}/>
+                        <Clear className='clear' onClick={()=>setSearchOpen(false)}/>
                         <SearchComponent setSearchOpen={setSearchOpen}/>
                     </div>
                 
@@ -104,10 +108,10 @@ export default function Topbar() {
                 </div>
                 <div className={menuOpen? "menuLinks active":'menuLinks'}>
                     <div className="wrapper">
-                        <Link onClick={()=>setMenuOpen((pre)=>!pre)} to='/'>Home</Link>
-                        <Link onClick={()=>setMenuOpen((pre)=>!pre)} to='/products'>Products</Link>
-                        <Link onClick={()=>setMenuOpen((pre)=>!pre)} to='/cart'>Cart</Link>
-                        <Link onClick={()=>setMenuOpen((pre)=>!pre)} to='/contact'>Contact</Link>
+                        <Link className={(pathname == '/') ? 'active' : ''} onClick={()=>setMenuOpen((pre)=>!pre)} to='/'>Home</Link>
+                        <Link className={(pathname == '/products') ? 'active' : ''} onClick={()=>setMenuOpen((pre)=>!pre)} to='/products'>Products</Link>
+                        <Link className={(pathname == '/cart') ? 'active' : ''} onClick={()=>setMenuOpen((pre)=>!pre)} to='/cart'>Cart</Link>
+                        <Link className={(pathname == '/contact') ? 'active' : ''} onClick={()=>setMenuOpen((pre)=>!pre)} to='/contact'>Contact</Link>
                     </div>
                 </div>
             </div>

@@ -12,6 +12,7 @@ export default function CurtProduct({ itemData }) {
   const dispatch = useDispatch();
   
   const [quantity, setQuantity] = useState(1);
+  
   const increase = () => {
      setQuantity((prequantity) => prequantity + 1);
      dispatch(increaseTotalPrice(itemData.price))
@@ -24,8 +25,12 @@ export default function CurtProduct({ itemData }) {
        }
   };
   const removeItem = () => {
-    dispatch(drop(itemData))
-    dispatch(decreaseTotalPrice(itemData.price * quantity))
+    
+      dispatch(drop(itemData))
+      dispatch(decreaseTotalPrice(itemData.price * (quantity -1)))
+      setClicked(true)
+    
+    
 
   };
 

@@ -11,7 +11,7 @@ export default function TodaysDeals() {
       <div className="heading2">Our New Products</div>
       <div className="products">
       {itemsData.map((element) => (
-        <Link key={element.id} to="/catagory" className="item">
+        <Link key={element.id} to='/catagory/?catagory=others' className="item">
           <img src={element.imgSource} alt="" />
           <div className="text">{element.price}$</div>
         </Link>

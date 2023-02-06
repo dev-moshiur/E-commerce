@@ -229,6 +229,13 @@
                     color: #fff;
                     font-size: 1.7rem;
                     font-weight: 500;
+                    width: fit-content;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 0.2rem;
+                    transition: 0.2s;
+                    &.active{
+                        background-color: var(--light-color);
+                    }
 
                 }
 
@@ -262,7 +269,7 @@
                     transition: 0.3s;
                     overflow: hidden;
                     &.active{
-                        height: 160px;
+                        height: 170px;
                     }
                     .wrapper{
                         height: fit-content;
@@ -278,6 +285,16 @@
                             color: #fff;
                             font-size: 1.5rem;
                             margin-bottom: 0.5rem;
+                            width: fit-content;
+                            padding: 0.5rem 0.8rem;
+                            border-radius: 0.2rem;
+                            transition: 0.2s;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &.active{
+                                background-color: var(--light-color);
+                            }
                             
                             &::after{
                                 content: '';

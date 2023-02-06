@@ -56,9 +56,9 @@ export default function ViewPorduct() {
                 {item.catagory}
               </div>
               {cartItems.includes(item) && <div className="added">Already Added</div>}
-              <div onClick={handleCart} className="addToCart">
+              <button  onClick={handleCart} className={cartItems.includes(item) ? "addToCart added" : "addToCart"}>
                 Add To Cart
-              </div>
+              </button>
             </div>
           </div>
           <div className="bottom">
