@@ -25,12 +25,8 @@ export default function CurtProduct({ itemData }) {
        }
   };
   const removeItem = () => {
-    
-      dispatch(drop(itemData))
-      dispatch(decreaseTotalPrice(itemData.price * (quantity -1)))
-      setClicked(true)
-    
-    
+    dispatch(drop(itemData))
+    dispatch(decreaseTotalPrice(itemData.price * (quantity - 1)))
 
   };
 
@@ -39,12 +35,7 @@ export default function CurtProduct({ itemData }) {
       <span onClick={removeItem} className="drop">
         {cartItems.length == 1 ? (
           <Link
-            onClick={() =>
-              dispatch({
-                type: "changeActiveLink",
-                value: "home",
-              })
-            }
+            
             to="/"
           >
             <CancelPresentation />
